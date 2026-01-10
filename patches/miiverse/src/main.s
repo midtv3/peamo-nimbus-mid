@@ -24,9 +24,10 @@ der_cert_address equ 0x38DCB0
 
 // set url for miiverse/juxt
 .org discovery_string
-	.ascii "https://discovery.olv.pretendo.cc/v1/endpoint", 0
+	.ascii "https://discovery.olv.ixchats.com/v1/endpoint", 0
 
 .include "src/certs.s"
 .include "src/mounting.s"
+
 
 .close
