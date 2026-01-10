@@ -65,7 +65,7 @@ start_replacements_addr equ 0x131088
 		bl    strcmp                   ; compare hostname with nncs1
 		cmp   r0, #0
 		ldreq r0, =nncs1_pretendo_name ; if it matches, return the pretendo domain and its size
-		moveq r1, #21                  ; size of pretendo domain
+		moveq r1, #21                  ; size of peamo:sob domain
 		beq   handle_replacements_end
 		mov   r0, r10                  ; move original hostname to r0
 		ldr   r1, =nncs2_orig_name
@@ -89,9 +89,9 @@ start_replacements_addr equ 0x131088
 		.asciiz "nncs2.app.nintendowifi.net"
 
 	nncs1_pretendo_name:
-		.asciiz "nncs1.app.pretendo.cc"
+		.asciiz "nncs1.app.ixchats.com"
 
 	nncs2_pretendo_name:
-		.asciiz "nncs2.app.pretendo.cc"
+		.asciiz "nncs2.app.ixchats.com"
 
 .close
