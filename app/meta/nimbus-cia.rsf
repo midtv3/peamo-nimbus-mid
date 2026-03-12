@@ -1,6 +1,6 @@
 BasicInfo:
-  Title                   : "nimbus-peamo"
-  ProductCode             : "nimbus-peamo"
+  Title                   : "peamo-nimbus"
+  ProductCode             : "peamo-nimbus"
   Logo                    : Homebrew # Nintendo / Licensed / Distributed / iQue / iQueForSystem
 
 RomFs:
@@ -164,3 +164,4 @@ SystemControlInfo:
     gsp: 0x0004013000001c02
 
     hid: 0x0004013000001d02
+
